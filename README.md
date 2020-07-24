@@ -1,10 +1,6 @@
-
-# PROJECT 4 README <!-- omit in toc -->
-# portfolio
-> portfolio -v1> The Project Planning section **should be completed** for your project pitch with instructors.
+# portfolio site
+> portfolio -v1> 
 >
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
