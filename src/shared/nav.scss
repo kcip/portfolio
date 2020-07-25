@@ -1,0 +1,25 @@
+.nav {
+  writing-mode: vertical-rl;
+  display: inline-flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  width: 5rem;
+  position: relative;
+  height: calc(100vh - 2rem);
+  align-items: center;
+  position: absolute;
+  
+
+  a {
+    transition: all 400ms ease-out;
+  }
+  a:hover {
+    transform: scale(1.5);
+  }
+}
+
+.activeLink {
+  color: red;
+  font-weight: bold;
+  transform: scale(2);
+}
