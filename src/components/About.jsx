@@ -38,6 +38,9 @@ const About = () => {
             </div>
           </div>
         </div>
+        {/* <div className="about--contact">
+          <p>contact info</p><span>&nbsp;|&nbsp;</span> <p>email: <a href="scottepick@gmail.com">scottepick@gmail.com</a></p>
+        </div> */}
 
       </div>
     </div>
