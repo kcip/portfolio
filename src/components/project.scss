@@ -1,3 +1,93 @@
-img {
-  width: 300px;
-}
+.project {
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+   &--container {
+    display: grid;
+    grid-template-columns: 5rem repeat(5, 1fr) 5rem;
+    grid-template-rows: 5rem repeat(5, 1fr) 5rem;
+    width: 90vw;
+    height: 90vh;
+   }
+     &--image {
+      grid-row: 2 / span 5;
+      grid-column: 2 / span 3;
+      object-fit: contain;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    
+
+       &--img {
+        max-width: 45vw;
+        max-height: 80vh;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+       }
+     }
+
+     &--details {
+      grid-column: 5 / span 2;
+      grid-row: 2 / span 5;
+      padding-left: 3rem;
+     }
+     &--name {
+      font-size: 7vw;
+      font-weight: bold;
+     }
+     &--description {
+      justify-self: center;
+      align-self: end;
+      font-size: 1.8rem;
+      line-height: 1.6;
+      margin-bottom: .5rem;
+      padding: 0 1rem;
+
+       span {
+         font-weight: bold;
+         font-size: 1.6rem;
+       }
+
+     }
+     
+   
+
+     &--links {
+       display: flex;
+       align-items: center;
+       padding: 0 1rem;
+
+       
+     }
+   
+     
+   }
+
+   .link {
+    margin-bottom: 0;
+  }
+
+  .siteLink {
+    font-size: 1.6rem;
+    color: #333;
+  }
+
+  .back {
+    grid-row: 7;
+    grid-column: 7;
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    color: #333;
+    transition: all 300ms ease-out;
+
+     &:hover {
+       transform: scale(1.2);
+     }
+  }

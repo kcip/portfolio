@@ -5,8 +5,10 @@ const data = [
     'url': 'http://www.ectest.xyz',
     'description': 'ectest.xyz is an ESL placement test created with HTML, Javascript, and PHP & MySql for the backend.',
     'image': require('../resources/photos/ec.png'),
+    'image2': require('../resources/photos/ec-2.png'),
     'additionalInfo': 'no',
-    'github': 'n/a'
+    'github': 'n/a',
+    'tech': 'HTML, CSS, PHP, MySQL, jQuery'
 
   },
 
@@ -16,8 +18,10 @@ const data = [
     'url': 'http://billyshakes.xyz',
     'description': 'Ye ol\' billyshakes is a random word generator for those times when Old English slang putdowns are necessary.',
     'image': require('../resources/photos/billy.png'),
-    'additionalInfo': 'This was inspired by a Shakespere flipbook taht was in my office for a looong time.',
-    'github': 'n/a'
+    'image2': require('../resources/photos/billy-2.png'),
+    'additionalInfo': 'This was inspired by a Shakespere flipbook that was in my office for a looong time.',
+    'github': 'n/a',
+    'tech': 'HTML, CSS, JavaScript'
 
   },
   {
@@ -26,8 +30,10 @@ const data = [
     'url': 'https://pages.git.generalassemb.ly/kcip/Guess-That-Word--/',
     'description': 'The title says it all. Except that its using the Dictionary API.',
     'image': require('../resources/photos/guess.png'),
+    'image2': require('../resources/photos/guess-2.png'),
     'additionalInfo': 'Beware of the corgie!',
-    'github': 'n/a'
+    'github': 'n/a',
+    'tech': 'HTML, CSS, JavaScript, Axios, API'
 
   },
   {
@@ -36,18 +42,22 @@ const data = [
     'url': 'https://epic-goldberg-ef1551.netlify.app/',
     'description': 'A movie search app using The Movie Database API',
     'image': require('../resources/photos/searchies.png'),
+    'image2': require('../resources/photos/searchies-2.jpg'),
     'additionalInfo': 'The frontend is React. The data is provided by an API',
-    'github': 'https://github.com/kcip/searchies'
+    'github': 'https://github.com/kcip/searchies',
+    'tech': 'React, SASS, Axios, API'
 
   },
   {
     'id': 5,
     'name': 'Good Cuisine',
     'url': 'http://slow-potato.surge.sh/',
-    'description': 'This site was designed by a group of UX students and GA and built by my team',
+    'description': 'This site was designed by a group of UX students in Generay Assembly\'s UX program and built by my team from the General Assembly SEI (Software Engineering Intensive) program.',
     'image': require('../resources/photos/good-cuisine.png'),
+    'image2': require('../resources/photos/good-cuisine-2.png'),
     'additionalInfo': 'The frontend is React. The backend is Mongo DB.',
-    'github': 'https://github.com/kcip/good-cuisine'
+    'github': 'https://github.com/kcip/good-cuisine',
+    'tech': 'React, SASS, Axios, Mongo DB, Mongoose'
 
   },
   {
@@ -56,8 +66,10 @@ const data = [
     'url': 'https://amazing-turing-58b7a3.netlify.app/',
     'description': '',
     'image': require('../resources/photos/bloggie.png'),
-    'additionalInfo': 'The frontend is React. The backend is Ruby on Rails.',
-    'github': 'https://github.com/kcip/bloggie'
+    'image2': require('../resources/photos/bloggie-2.png'),
+    'additionalInfo': 'The frontend is React and the backend is Ruby on Rails.',
+    'github': 'https://github.com/kcip/bloggie',
+    'tech': 'React, SASS, Ruby on Rails'
 
   },
 ]

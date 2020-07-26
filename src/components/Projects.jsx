@@ -5,7 +5,6 @@ const Projects = (props) => {
   const data = props.data;
   return (
     <div className='projects'>
-      {console.log(data)}
       <div className='projects--wrapper'>
         <div className='projects--container'>
           <h2 className='projects--text'><span>recent</span> projects</h2>
@@ -22,15 +21,3 @@ const Projects = (props) => {
   )
 }
 export default Projects;
-
-{/* <div>
-            {data && data.map((item, i) => (
-              <Fragment>
-                <div className={`item-${item.id}`}>
-                  <p>{item.name}</p>
-                  <p>{item.description}</p>
-                </div>
-              </Fragment>
-
-            ))}
-          </div> */}

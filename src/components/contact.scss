@@ -1,3 +1,98 @@
 .contact {
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+
+   &--container {
+     width: 90%;
+     height: 90%;
+     display: grid;
+     grid-gap: 1rem;
+     grid-template-columns: 5rem repeat(4, 1fr) 5rem;
+     grid-template-rows: 5rem repeat(4, 1fr) 5rem;
+   }
+
+   &--item {
+     display: grid;
+     grid-template-columns: 10rem repeat(2, 1fr) 10rem;
+     grid-template-rows: 10rem repeat(2, 1fr) 10rem;
+     border-radius: 10px;
+   }
+   &--github {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    font-size: 5rem;
+    color: wheat;
+    writing-mode: vertical-lr;
+    align-self: center;
+    font-weight: bold;
+    margin-left: -11px;
+   }
+
+   &--linkedin {
+    grid-row: 4;
+    grid-column: 1 / -1;
+    font-size: 5rem;
+    color: wheat;
+    align-self: end;
+    justify-self: center;
+    margin-bottom: -11px;
+    font-weight: bold;
+   }
+   &--resume {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    font-size: 5rem;
+    color: wheat;
+    justify-self: center;
+   }
+
+   &--email {
+    grid-row: 1 / -1;
+    grid-column: 4;
+    font-size: 5rem;
+    writing-mode: tb-rl;
+    color: wheat;
+    align-self: center;
+   }
+
+}
+
+.top-left {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 2;
+  background: blue;
+}
+.bottom-left {
+  grid-row: 4 / span 2;
+  grid-column: 2 / span 2;
+  background: green;
+}
+.top-right {
+  grid-row: 2 / span 2;
+  grid-column: 4 / span 2;
+  background: yellow;
+}
+.bottom-right {
+grid-row: 4 / span 2;
+grid-column: 4 / span 2;
+background: red;
+}
+
+svg.github {
+  height: 100px;
+  width: 100px;
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  justify-self: center;
+}
+
+svg.linkedin {
+  height: 100px;
+  width: 100px;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+  justify-self: center;
 }
