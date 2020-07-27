@@ -29,7 +29,7 @@ const Project = (props) => {
           <img className="project--image--img" src={data.image2} alt={data.name} />
         </div>
         <div className="project--details">
-          <p className="project--name">{data.name}</p>
+          <h2 className="project--name">{data.name}</h2>
           <p className="project--description">{data.description}</p>
           <p className="project--description">{data.additionalInfo}</p>
           <p className="project--description"><span>built with:</span> {data.tech}</p>
@@ -37,8 +37,10 @@ const Project = (props) => {
             <a className="project--github-logo" href={data.github}>
               <p className="svg" style={{ backgroundImage: `url(${github})` }}></p>
             </a>
-            <p className="project--description link"><span>link to site:</span> </p>
-            <a className="siteLink" href={data.url}>{data.name}</a>
+            <p className="project--description link"><span>link to site: </span>
+              <a target="_blank" className="siteLink" href={data.url}>{data.name}</a>
+            </p>
+
           </div>
 
         </div>

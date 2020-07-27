@@ -15,13 +15,13 @@ const Main = () => {
       </div>
       <div className="main--contactInfo">
         <div className="main--contact">
-          <p className="svg gitHub" style={{ backgroundImage: `url(${github})`, height: '25px', width: '25px' }}></p>
+          <p className="svg gitHub" style={{ backgroundImage: `url(${github})`, height: '30px', width: '30px' }}></p>
         </div>
         <div className="main--contact">
           <p><FontAwesomeIcon icon={faEnvelope} /></p>
         </div>
         <div className="main--contact">
-          <p className="svg linkedin" style={{ backgroundImage: `url(${linkedin})`, height: '25px', width: '25px' }}></p>
+          <p className="svg linkedin" style={{ backgroundImage: `url(${linkedin})`, height: '30px', width: '30px' }}></p>
         </div>
       </div>
     </div>

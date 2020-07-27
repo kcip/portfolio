@@ -12,6 +12,8 @@
 
   a {
     transition: all 400ms ease-out;
+    font-size: 1.6rem;
+    color: #f9f9f9;
   }
   a:hover {
     transform: scale(1.5);
@@ -19,7 +21,7 @@
 }
 
 .activeLink {
-  color: red;
+  color:#E94957!important;
   font-weight: bold;
-  transform: scale(2);
+  transform: scale(1.6);
 }

@@ -9,18 +9,17 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact--container">
-        <div className="contact--item top-left"><p className="contact--github">Github</p>
-          <p className="svg gitHub" style={{ backgroundImage: `url(${github})`, height: '25px', width: '25px' }}></p>
+        <div className="contact--item top-left"><p className="contact--github contact-text">Github</p>
+          <p className="svg gitHub grid-center" style={{ backgroundImage: `url(${github})`, height: '80px', width: '80px' }}></p>
         </div>
-        <div className="contact--item bottom-left"><p className="contact-linkedin">Linkedin</p>
-          <p className="svg linkedin" style={{ backgroundImage: `url(${linkedin})`, height: '25px', width: '25px' }}></p>
+        <div className="contact--item bottom-left"><p className="contact--linkedin contact-text">Linkedin</p>
+          <p className="svg linkedin grid-center" style={{ backgroundImage: `url(${linkedin})`, height: '80px', width: '80px' }}></p>
         </div>
-        <div className="contact--item top-right"><p className="contact--resume">Resume</p>
-          <FontAwesomeIcon icon={faFilePdf} />
+        <div className="contact--item top-right"><p className="contact--resume contact-text">Resume</p>
+          <p className="grid-center"><FontAwesomeIcon icon={faFilePdf} style={{ height: '80px', width: '80px' }} /></p>
         </div>
-        <div className="contact--item bottom-right"><p className="contact--email">Email</p>
-          <FontAwesomeIcon icon={faEnvelope} />
-
+        <div className="contact--item bottom-right"><p className="contact--email contact-text">Email</p>
+          <p className="grid-center"><FontAwesomeIcon icon={faEnvelope} style={{ height: '80px', width: '80px' }} /></p>
         </div>
       </div>
     </div>
