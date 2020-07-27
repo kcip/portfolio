@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #F78154;
+  border-radius: 10px;
 
    &--container {
     display: grid;
@@ -40,18 +42,23 @@
      &--name {
       font-size: 7vw;
       font-weight: bold;
+      color: #FEF1EC;
+      text-shadow: 1px 3px rgba(0,0,0,0.3);
      }
      &--description {
       justify-self: center;
       align-self: end;
-      font-size: 1.8rem;
+      font-size: 2rem;
       line-height: 1.6;
       margin-bottom: .5rem;
-      padding: 0 1rem;
+      padding-left: 1rem;
+      color: #FCD4C5;
+      font-weight: bold;
 
        span {
          font-weight: bold;
          font-size: 1.6rem;
+         color: #fff;
        }
 
      }
@@ -76,6 +83,24 @@
   .siteLink {
     font-size: 1.6rem;
     color: #333;
+    padding-left: 5px;
+    transition: all 200ms ease-out;
+    padding: 3px;
+    background: linear-gradient(to bottom,
+    rgba(247, 188, 141, 0)0%,
+    rgba(247, 188, 141, 0)50%,
+    rgba(247, 188, 141, 1)50%,
+    rgba(247, 188, 141, 1)100%);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+
+    &:hover {
+      background-position: 0 100%;
+      color: #fff;
+      
+    }
+    
+    
   }
 
   .back {
@@ -86,6 +111,29 @@
     font-size: 2rem;
     color: #333;
     transition: all 300ms ease-out;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+
+     &:hover {
+       transform: scale(1.2);
+     }
+  }
+
+  .project--github-logo {
+    width: 30px;
+    height: 30px;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    transition: all 300ms linear;
 
      &:hover {
        transform: scale(1.2);

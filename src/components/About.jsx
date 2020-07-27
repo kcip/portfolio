@@ -12,6 +12,12 @@ import rails from '../resources/icons/rails/rails-original-wordmark.svg'
 import postgresql from '../resources/icons/postgresql/postgresql-original-wordmark.svg';
 import git from '../resources/icons/git/git-original.svg'
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import linkedin from '../resources/icons/linkedin/linkedin-original.svg';
+import github from '../resources/icons/github/github-original-wordmark.svg';
+
 const About = () => {
 
   return (
@@ -38,9 +44,32 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* <div className="about--contact">
-          <p>contact info</p><span>&nbsp;|&nbsp;</span> <p>email: <a href="scottepick@gmail.com">scottepick@gmail.com</a></p>
-        </div> */}
+        <div className="about--contact">
+          <div className="about--header">
+            <p className="about--text">contact information</p>
+          </div>
+          <div className="about--contactContainer">
+            <div className="about--contacts email">
+              <p clasName="contact-info"><FontAwesomeIcon icon={faEnvelope} style={{ height: '25px', width: '25px' }} /></p>
+              <p className="contact-p">email</p>
+            </div>
+            <div className="about--contacts linkedin">
+              <p clasName="contact-info" style={{ backgroundImage: `url(${linkedin})`, height: '25px', width: '25px' }}></p>
+              <p className="contact-p">linkedin</p>
+            </div>
+
+            <div className="about--contacts github">
+              <p clasName="contact-info" style={{ backgroundImage: `url(${github})`, height: '25px', width: '25px' }}></p>
+              <p className="contact-p">github</p>
+            </div>
+
+            <div className="about--contacts resume">
+              <p clasName="contact-info"><FontAwesomeIcon icon={faFilePdf} style={{ height: '25px', width: '25px' }} /></p>
+              <p className="contact-p">resume</p>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
