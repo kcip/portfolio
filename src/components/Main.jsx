@@ -15,13 +15,20 @@ const Main = () => {
       </div>
       <div className="main--contactInfo">
         <div className="main--contact">
-          <p className="svg gitHub" style={{ backgroundImage: `url(${github})`, height: '30px', width: '30px' }}></p>
+          <p className="svg gitHub" style={{ backgroundImage: `url(${github})`, height: '30px', width: '30px' }}>
+            <a className="linkOut" target="_blank" href="https://github.com/kcip?tab=repositories" rel="noopener noreferrer"></a>
+          </p>
         </div>
         <div className="main--contact">
-          <p><FontAwesomeIcon icon={faEnvelope} /></p>
+          <a className="linkOut email" href="mailto:scottepick@gmail.com" rel="noopener noreferrer">
+            <p><FontAwesomeIcon icon={faEnvelope} /></p>
+          </a>
+
         </div>
         <div className="main--contact">
-          <p className="svg linkedin" style={{ backgroundImage: `url(${linkedin})`, height: '30px', width: '30px' }}></p>
+          <p className="svg linkedin" style={{ backgroundImage: `url(${linkedin})`, height: '30px', width: '30px' }}>
+            <a className="linkOut" target="_blank" href="https://www.linkedin.com/in/scott-pick-121a5519b/" rel="noopener noreferrer"></a>
+          </p>
         </div>
       </div>
     </div>

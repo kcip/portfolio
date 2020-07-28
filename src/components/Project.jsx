@@ -37,8 +37,8 @@ const Project = (props) => {
             <a className="project--github-logo" href={data.github}>
               <p className="svg" style={{ backgroundImage: `url(${github})` }}></p>
             </a>
-            <p className="project--description link"><span>link to site: </span>
-              <a target="_blank" className="siteLink" href={data.url}>{data.name}</a>
+            <p className="project--description link"><span className="margin-left">link to site: </span>
+              <a rel="noopener noreferrer" target="_blank" className="siteLink" href={data.url}>{data.name}</a>
             </p>
 
           </div>
