@@ -66,3 +66,20 @@ button, a, span {
   // font-family: 'Rambla', sans-serif;
   font-family: 'Scada', sans-serif;
 }
+
+.linkOut {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.linkOut.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-out;
+  &:hover >  p  {
+    transform: scale(1.3)
+  }
+}

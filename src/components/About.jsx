@@ -50,19 +50,23 @@ const About = () => {
           </div>
           <div className="about--contactContainer">
             <div className="about--contacts email">
-              <p clasName="contact-info"><FontAwesomeIcon icon={faEnvelope} style={{ height: '25px', width: '25px' }} /></p>
+              <a className="linkOut email" href="mailto:scottepick@gmail.com" rel="noopener noreferrer">
+                <p><FontAwesomeIcon icon={faEnvelope} className="emailLink" /></p>
+              </a>
               <p className="contact-p">email</p>
             </div>
             <div className="about--contacts linkedin">
-              <p clasName="contact-info" style={{ backgroundImage: `url(${linkedin})`, height: '25px', width: '25px' }}></p>
+              <p clasName="contact-info" style={{ backgroundImage: `url(${linkedin})`, height: '25px', width: '25px' }}>
+                <a className="linkOut" target="_blank" href="https://www.linkedin.com/in/scott-pick-121a5519b/" rel="noopener noreferrer"></a>
+              </p>
               <p className="contact-p">linkedin</p>
             </div>
-
             <div className="about--contacts github">
-              <p clasName="contact-info" style={{ backgroundImage: `url(${github})`, height: '25px', width: '25px' }}></p>
+              <p clasName="contact-info" style={{ backgroundImage: `url(${github})`, height: '25px', width: '25px' }}>
+                <a className="linkOut" target="_blank" href="https://github.com/kcip?tab=repositories" rel="noopener noreferrer"></a>
+              </p>
               <p className="contact-p">github</p>
             </div>
-
             <div className="about--contacts resume">
               <p clasName="contact-info"><FontAwesomeIcon icon={faFilePdf} style={{ height: '25px', width: '25px' }} /></p>
               <p className="contact-p">resume</p>
