@@ -28,7 +28,7 @@ const data = [
     'id': 3,
     'name': 'Guess That Word',
     'url': 'https://pages.git.generalassemb.ly/kcip/Guess-That-Word--/',
-    'description': 'The title says it all.\n Except that it\'s also using the Dictionary API.',
+    'description': 'The title says it all...\n except that it\'s also using the Dictionary API.',
     'image': require('../resources/photos/guess.png'),
     'image2': require('../resources/photos/guess-2.png'),
     'additionalInfo': 'Beware of the corgie!',
