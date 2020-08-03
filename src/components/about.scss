@@ -84,6 +84,7 @@
        @include respond(phone){
         line-height: 1.8;
         padding: 1rem 2rem;
+        font-size: 1.6rem;
        }
        @media only screen and (min-width: 601px) and (max-width: 1000px){
          font-size: 1.7rem;
@@ -113,6 +114,7 @@
     justify-self: center;
     @include respond(phone){
       grid-column: 1 / -1;
+      display: none;
     }
  
   }
@@ -158,6 +160,7 @@
   cursor: pointer;
   @include respond(phone){
     height: 100%;
+    width: 8rem;
   }
   
 
@@ -182,6 +185,9 @@
   color: #f9f9f9;
   opacity: 0;
   transition: opacity 300ms linear;
+  @include respond(phone){
+    display: none;
+  }
 }
 
 .about--text {
@@ -192,7 +198,8 @@
   color: #f9f9f9;
   position: relative;
   @include respond(phone){
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0;
   }
 
    &:after {
@@ -205,7 +212,7 @@
     left: 0;
     margin: 0 auto;
     @include respond(phone){
-      bottom: -1px;
+      bottom: 6px;
     }
    }
 }
