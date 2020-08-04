@@ -8,6 +8,7 @@ import Nav from "./shared/Nav";
 import Main from './components/Main'
 import About from './components/About';
 import { data } from './data/data'
+import PDF from './components/pdf/PDF'
 function App(props) {
   return (
     <div className="App">
@@ -31,8 +32,11 @@ function App(props) {
           return <Project data={data} id={name} />
         }}>
         </Route>
-
+        <Route>
+          <PDF />
+        </Route>
       </Switch>
+
     </div>
   )
 

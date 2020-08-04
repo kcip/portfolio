@@ -185,6 +185,13 @@
   color: #f9f9f9;
   opacity: 0;
   transition: opacity 300ms linear;
+
+   &.resume a{ 
+     color: #f9f9f9;
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 2rem;
+    
+    }
   @include respond(phone){
     display: none;
   }

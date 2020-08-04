@@ -33,7 +33,6 @@ const Nav = () => {
         <span className={open ? "mobile--nav-span menu-is-open" : "mobile--nav-span"}></span>
       </div>
       <nav className={isVisible ? "nav show" : "nav"}>
-        {/* <nav className="nav" style={{ transform: isVisible ? 'translateX(0%)' : 'translateX(110%)' }}> */}
         <NavLink onClick={removeModal} className={show ? 'is-shown' : null} activeClassName="activeLink" to="/" exact>Home</NavLink>
         <NavLink onClick={removeModal} className={show ? 'is-shown' : null} activeClassName="activeLink" to="/projects" exact>Projects</NavLink>
         <NavLink onClick={removeModal} className={show ? 'is-shown' : null} activeClassName="activeLink" to="/about" exact>About me</NavLink>
