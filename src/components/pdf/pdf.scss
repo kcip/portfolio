@@ -1,0 +1,23 @@
+.pdf--wrapper {
+  border-radius: 10px;
+  background-color: #555b6e;
+  height: calc(100vh - 2rem);
+  width: calc(100vw - 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pdf--container {
+  height: 90vh;
+  width: 85vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border: none;
+}

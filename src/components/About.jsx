@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './about.scss';
 import image from '../resources/photos/me.jpeg';
 import jss from '../resources/icons/javascript/javascript-plain.svg';
@@ -11,12 +12,12 @@ import mongo from '../resources/icons/mongodb/mongodb-plain.svg'
 import rails from '../resources/icons/rails/rails-original-wordmark.svg'
 import postgresql from '../resources/icons/postgresql/postgresql-original-wordmark.svg';
 import git from '../resources/icons/git/git-original.svg'
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import linkedin from '../resources/icons/linkedin/linkedin-original.svg';
 import github from '../resources/icons/github/github-original-wordmark.svg';
+
+import PDF from './pdf/PDF';
 
 const About = () => {
 
@@ -69,14 +70,13 @@ const About = () => {
             </div>
             <div className="about--contacts resume">
               <p clasName="contact-info"><FontAwesomeIcon icon={faFilePdf} style={{ height: '25px', width: '25px' }} /></p>
-              <p className="contact-p">resume</p>
+              <p className="contact-p resume"><Link to="/PDF">resume</Link></p>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
+
   )
 }
 export default About;
