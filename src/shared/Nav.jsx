@@ -11,7 +11,21 @@ const Nav = () => {
     toggleisVisible()
     setShow()
   }
+  const removeModal = () => {
+    toggleisVisible({
+      isVisible: false
+    });
 
+    setOpen({
+      open: false
+    });
+
+    setShow({
+      show: false
+    })
+
+
+  }
 
   return (
     <Fragment>
@@ -20,9 +34,9 @@ const Nav = () => {
       </div>
       <nav className={isVisible ? "nav show" : "nav"}>
         {/* <nav className="nav" style={{ transform: isVisible ? 'translateX(0%)' : 'translateX(110%)' }}> */}
-        <NavLink className={show ? 'is-shown' : null} activeClassName="activeLink" to="/" exact>Home</NavLink>
-        <NavLink className={show ? 'is-shown' : null} activeClassName="activeLink" to="/projects" exact>Projects</NavLink>
-        <NavLink className={show ? 'is-shown' : null} activeClassName="activeLink" to="/about" exact>About me</NavLink>
+        <NavLink onClick={removeModal} className={show ? 'is-shown' : null} activeClassName="activeLink" to="/" exact>Home</NavLink>
+        <NavLink onClick={removeModal} className={show ? 'is-shown' : null} activeClassName="activeLink" to="/projects" exact>Projects</NavLink>
+        <NavLink onClick={removeModal} className={show ? 'is-shown' : null} activeClassName="activeLink" to="/about" exact>About me</NavLink>
       </nav>
     </Fragment>
 
